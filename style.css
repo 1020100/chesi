@@ -44,6 +44,28 @@ body {
     color: #f3eadc;
 }
 
+/* Кнопки CTA */
+.cta-button, .cta-button-nav {
+    background-color: #c8a46e !important;
+    border-color: #c8a46e !important;
+    color: #3a2d28 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover, .cta-button-nav:hover {
+    background-color: #b8945e !important;
+    border-color: #b8945e !important;
+    transform: scale(1.05);
+}
+
+.cta-button-nav {
+    padding: 10px 20px !important;
+    font-size: 0.9rem !important;
+}
+
 /* Общие стили секций */
 section {
     padding: 80px 0;
@@ -53,6 +75,7 @@ section h2 {
     font-weight: bold;
     color: #3a2d28;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 /* Секция "Обо мне" */
@@ -88,9 +111,41 @@ section h2 {
     font-size: 1.2rem;
 }
 
+/* Секция "Примеры работ" */
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-card img {
+    transition: transform 0.4s;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(58, 45, 40, 0.8);
+    color: #f3eadc;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
 /* Секция "Отзывы" */
-.review-card {
+#reviews {
     background-color: #ffffff;
+}
+
+.review-card {
+    background-color: #f3eadc;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -112,9 +167,29 @@ section h2 {
     filter: invert(1) grayscale(100) brightness(0.5);
 }
 
+/* Секция "Форма заявки" */
+#request-form {
+    background-color: #f3eadc;
+}
+
+#request-form .form-control {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+#request-form .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(200, 164, 110, 0.25);
+    border-color: #c8a46e;
+}
+
 /* Секция "Контакты" */
 #contact {
     background-color: #ffffff;
+}
+
+#contact iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .map-placeholder {
@@ -134,6 +209,14 @@ footer {
 }
 
 /* Адаптивность */
+@media (max-width: 992px) {
+    .cta-button-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-section h1 {
         font-size: 2.5rem;
