@@ -46,19 +46,21 @@ body {
 
 /* Кнопки CTA */
 .cta-button, .cta-button-nav {
-    background-color: #c8a46e !important;
-    border-color: #c8a46e !important;
+    background-image: linear-gradient(to right, #dcbda0 0%, #c8a46e 51%, #dcbda0 100%) !important;
+    background-size: 200% auto !important;
+    border: none !important;
     color: #3a2d28 !important;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(58, 45, 40, 0.2);
+    transition: all 0.4s ease-out;
 }
 
 .cta-button:hover, .cta-button-nav:hover {
-    background-color: #b8945e !important;
-    border-color: #b8945e !important;
-    transform: scale(1.05);
+    background-position: right center !important; /* change the direction of the change here */
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(58, 45, 40, 0.3);
 }
 
 .cta-button-nav {
