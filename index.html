@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт часов в Иркутске</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Пушкин.Часы</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <header class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+        <div>
+            <h1>Ремонт часов в Иркутске</h1>
+            <p class="lead">Профессиональный ремонт и реставрация часов любой сложности.</p>
+        </div>
+    </header>
+
+    <!-- Обо мне -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>О Мастере</h2>
+                    <p>Меня зовут Путин Пушкин, и я посвятил свою жизнь искусству часового дела. С более чем 20-летним опытом, я предлагаю качественный ремонт и реставрацию как современных, так и антикварных часов. Моя цель — вернуть к жизни ваши ценные механизмы, сохранив их историю и точность хода.</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/300" class="img-fluid rounded-circle" alt="Фотография мастера">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Услуги и цены</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Замена батарейки</h5>
+                            <p class="card-text">Быстрая и качественная замена элементов питания в кварцевых часах.</p>
+                            <p class="fw-bold">от 300₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ремонт механизма</h5>
+                            <p class="card-text">Полная диагностика, чистка, смазка и настройка точности хода.</p>
+                            <p class="fw-bold">от 1500₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Полировка и реставрация</h5>
+                            <p class="card-text">Восстановление корпуса и браслета, полировка стекла.</p>
+                            <p class="fw-bold">от 1000₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Отзывы клиентов</h2>
+            <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="review-card">
+                            <p>"Отличный мастер! Вернул к жизни старые часы деда. Очень доволен работой и отношением."</p>
+                            <cite>— Александр</cite>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <p>"Быстро, качественно и по разумной цене. Рекомендую всем, у кого проблемы с часами."</p>
+                            <cite>— Елена</cite>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Контакты</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>Адрес мастерской:</h4>
+                    <p>г. Иркутск, ул. Ленина, д. 1, офис 101</p>
+                    <h4>Телефон:</h4>
+                    <p>+7 (999) 123-45-67</p>
+                    <h4>Email:</h4>
+                    <p>master@pushkin-watch.ru</p>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Карта-заглушка -->
+                    <div class="map-placeholder">
+                        <p class="text-center">Здесь будет карта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 text-center">
+        <p>&copy; 2025 Пушкин.Часы. Все права защищены.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
