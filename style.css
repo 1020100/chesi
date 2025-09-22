@@ -4,6 +4,10 @@
    Золотой: #c8a46e
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Garamond', serif;
     background-color: #f3eadc;
